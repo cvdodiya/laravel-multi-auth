@@ -15,15 +15,15 @@ class DatabaseSeeder extends Seeder
         // ── Seed admin ────────────────────────────────────────────────────────
         Admin::create([
             'name'     => 'Super Admin',
-            'email'    => 'admin@example.com',
-            'password' => Hash::make('password'),
+            'email'    => 'admin@gmail.com',
+            'password' => Hash::make('admin@123'),
         ]);
 
         // ── Seed customer ─────────────────────────────────────────────────────
         User::create([
             'name'     => 'Test Customer',
-            'email'    => 'customer@example.com',
-            'password' => Hash::make('password'),
+            'email'    => 'customer@gmail.com',
+            'password' => Hash::make('cust@123'),
         ]);
 
         // ── Seed products ─────────────────────────────────────────────────────
